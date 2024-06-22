@@ -1,5 +1,5 @@
 document.getElementById("openChatBtn").addEventListener("click", function() {
-    document.getElementById("chatPopup").style.display = "block";
+    document.getElementById("chatPopup").style.display = "flex";
 });
 
 document.getElementById("closeChatBtn").addEventListener("click", function() {
