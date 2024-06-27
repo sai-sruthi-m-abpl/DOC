@@ -4,10 +4,10 @@ from keybert import KeyBERT
 import fitz
 import os
 import openai
-from langchain.embeddings import OpenAIEmbeddings
+
 kw_model = KeyBERT()
 from langchain_core.documents.base import Document
-from langchain.embeddings import OpenAIEmbeddings
+from langchain_openai import OpenAIEmbeddings
 from langchain.vectorstores import Chroma
 from langchain.retrievers import ContextualCompressionRetriever
 from langchain.retrievers.document_compressors import EmbeddingsFilter
@@ -18,7 +18,7 @@ from PIL import Image
 import io
 import matplotlib.pyplot as plt
 
-os.environ["OPENAI_API_KEY"] = 
+os.environ["OPENAI_API_KEY"] = data_key
 
 
 docs = []
